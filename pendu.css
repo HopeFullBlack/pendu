@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./image/FAR\ PENDU\ copie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    /**espace entre les lettres**/
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+
+.wanted {
+    margin-left: 5vw;
+    margin-top: 10vw;
+    width: 30vw;
+    height: 30vw;
+    background: url(./image/wanted.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.mot {
+    margin-left: 6vw;
+    padding-top: 12vw;
+}
+
+.lettre {
+    text-align: center;
+    display: inline-flex;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+
+
+}
+
+.mauvaiselettre {
+    width: 20vw;
+    height: 9vw;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(90, 55, 18, 0.745);
+    border-radius: 20px 20px;
+    color: rgb(203, 185, 173);
+    margin-top: 25vw;
+    margin-left: 7vh;
+    text-align: center;
+    position: absolute;
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.alphabet {
+    width: 60vw;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.potence {
+    background: url(./image/potence.jpg\ copie.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 40vw;
+    margin-top: 5vw;
+    padding-bottom: 3vw;
+    margin-left: 35vw;
+    position: absolute;
+    display: flex;
+}
+.corps{
+    width: 80vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+.tete{
+    width: 5vw;
+    background: url(./image/tete.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+    margin-left: 30.5vw;
+    margin-top: 6.5vw; 
+ 
+       
+}
+.tron{
+    width: 5vw;
+    background: url(./image/tron.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+
+    
+    
+ 
+    
+
+
+}
+.brasgauche{
+    width: 6vw;
+    height: 5w;
+   
+
+}
+
+.brasdroit{
+    width: 6vw;
+    height: 5w;
+
+}
+.jambedroite{
+    width: 2vw;
+    height: 5w;
+    ;
+    margin-left: 62vw;
+    margin-top: 18vw;
+}
+
+.jambegauche{
+    width: 4vw;
+    height: 5w;
+    ;
+    margin-left: 62vw;
+    margin-top: 18vw;
+}
+.popupContenant {
+    background-color: rgba(165, 42, 42, 0.462);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    padding: 4vh;
+    text-align: center;
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+.button {
+    margin-top: 2vh;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    font-size: large;
+    box-shadow: 0 10px 10px 3px rgba(0, 0, 0, 0.6);
+
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.button:focus {
+    outline: 0
+}
+
+.notification-contenant {
+    background-color: rgba(99, 58, 21, 0.796);
+    color: aliceblue;
+    border-radius: 7px 7px 0 0;
+    padding: 15px 20px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 40%;
+    font-style: italic;
+    text-align: center;
+    padding-top: 1vh;
+    bottom: -75px;
+    transition: transform 0.3 ease-in-out;
+
+}
+
+.notification-contenant.afficher {
+    transform: translateY(-75px);
+
+}
