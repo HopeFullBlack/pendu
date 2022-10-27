@@ -31,12 +31,12 @@ function afficherMot() {
     }
 `;
 
-const motInterne = motEl.innerText.replace(/\n/g, '') //regrouper les lettres
+const motReformer = motEl.innerText.replace(/\n/g, '') //regrouper les lettres en supprimant les ecarts
 
-    console.log(motInterne, motSelectionne)
+    console.log(motReformer, motSelectionne, motEl)
 
 //on compare le motInterne et le motSelectionner
-    if (motInterne === motSelectionne){
+    if (motReformer === motSelectionne){
         messageFinal.innerText = 'Bravo ! Tu as gagné !';
         popup.style.display = 'flex';
     }
@@ -66,7 +66,7 @@ function updateMauvaiseLettreEl() {
 //Vérifier si on a perdu
 
 if(mauvaisesLettreArr.length === figurePartie.length){
-    
+
 }
 
 
