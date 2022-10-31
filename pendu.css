@@ -82,65 +82,98 @@ body {
     position: absolute;
     display: flex;
 }
-.corps{
+
+.corps {
     width: 80vw;
     height: 100vw;
     display: flex;
     flex-direction: column;
-    
-
-
 }
-.tete{
-    width: 5vw;
-    background: url(./image/tete.png);
+
+.tete {
+    width: 9vw;
+    background: url(./image/tete2.png);
     background-size: contain;
-    background-repeat: no-repeat;  
-    margin-left: 30.5vw;
-    margin-top: 6.5vw; 
- 
-       
+    background-repeat: no-repeat;
+    margin-left: 30vw;
+    margin-top: 6.5vw;
+    height: 9vw;
+    display: none;
 }
-.tron{
-    width: 5vw;
+.hautcorps {
+    display: flex;
+}
+
+
+.tron {
+    width: 9vw;
     background: url(./image/tron.png);
     background-size: contain;
-    background-repeat: no-repeat;  
-
-    
-    
- 
-    
-
-
-}
-.brasgauche{
-    width: 6vw;
-    height: 5w;
-   
+    background-repeat: no-repeat;
+    height: 12vh;
+    margin-left: 31.5vw;
+    position: relative;
+    top: -0.4vw;
+    display: none;
 
 }
 
-.brasdroit{
-    width: 6vw;
-    height: 5w;
+.brasgauche {
+    background: url(./image/brasgauche.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 10vh;
+    position: relative;
+    left: -20.6vw;
+    top: 0.5vw;
+    display: none;
+}
+
+.brasdroit {
+    background: url(./image/brasdroit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 10vh;
+    position: relative;
+    left: -5.8vw;
+    top: -2.5vw;
+    display: none;
 
 }
-.jambedroite{
-    width: 2vw;
-    height: 5w;
-    ;
-    margin-left: 62vw;
-    margin-top: 18vw;
+
+.jambes {
+    display: flex;
 }
 
-.jambegauche{
-    width: 4vw;
-    height: 5w;
-    ;
-    margin-left: 62vw;
-    margin-top: 18vw;
+.jambedroite {
+    background-image: url(./image/jambedroite.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 26vw;
+    height: 26vh;
+    margin-left: 33vw;
+    position: relative;
+    top: -20px;
+    display: none;
+
 }
+
+.jambegauche {
+    background: url(image/jambegauche.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 25vh;
+    margin-left: -33.3vw;
+    top: -0.6vw;
+    display: none;
+
+    position: relative;
+
+}
+
 .popupContenant {
     background-color: rgba(165, 42, 42, 0.462);
     position: fixed;
@@ -160,6 +193,13 @@ body {
     color: aliceblue;
     border-radius: 5px;
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+.sac{
+    
+    display: none;
+    transform: rotate(90deg);
+    margin-top: 20em;
 }
 
 .button {
@@ -202,4 +242,12 @@ body {
 .notification-contenant.afficher {
     transform: translateY(-75px);
 
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
 }
